@@ -14,7 +14,7 @@ ECR configurations includes:
 
 ```hcl
 module "ecr" {
-  source = "techadontech/aws-ecr-terraform"
+  source = "techadontech/terraform-aws-ecr"
   images = var.images
   tags   = var.global_tags
 }

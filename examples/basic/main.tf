@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 module "ecr" {
-  source = "git::https://github.com/techadontech/aws-ecr-terraform.git"
+  source = "git::https://github.com/techadontech/terraform-aws-ecr.git"
   images = var.images
   tags   = var.global_tags
 }
