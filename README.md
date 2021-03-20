@@ -46,8 +46,8 @@ No Modules.
 | scan_images_on_push | (Optional) Allow or disallow scan on push. | `bool` | `false` | no |
 | encryption_configuration | (Optiona) encryption type, provide kms key if using kms. | `object({encryption_type = string, kms_key   = any})` | `{encryption_type = "AES256", kms_key = null}` | no |
 | image_tag_mutability | (Optional) IMMUTABLE or MUTABLE, image changeability. | `string)` | `MUTABLE` | no |
-| image_repository_access | (Optional) Image access to the ECR, [READ_ONLY_ACCESS, FULL_ACCESS]. | `string` | `FULL_ACCESS` | yes |
-| images | (Required) list of images. | `list(string)` | `null` | yes |
+| image_repository_access | (Optional) Image access to the ECR, [READ_ONLY_ACCESS, FULL_ACCESS]. | `string` | `FULL_ACCESS` | no |
+| images | (Required) list of images. | `list(string)` | `[]` | yes |
 
 ## Outputs
 
