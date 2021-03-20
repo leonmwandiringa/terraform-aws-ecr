@@ -9,7 +9,6 @@ ECR configurations includes:
 - Iam
 - Tag Immutability
 
-
 ## Basic Usage
 
 ```hcl
