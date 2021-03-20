@@ -1,8 +1,8 @@
 # AWS ECR Terraform module
 
-Terraform module which creates S3 bucket on AWS with all (or almost all) features provided by Terraform AWS provider.
+Terraform module which creates AWS ECR Rpositories on AWS .
 
-These features of ECR configurations are:
+ECR configurations includes:
 
 - Scan On Push
 - Encryption
@@ -10,9 +10,7 @@ These features of ECR configurations are:
 - Tag Immutability
 
 
-## Usage
-
-### Private bucket with versioning enabled
+## Basic Usage
 
 ```hcl
 module "ecr" {
