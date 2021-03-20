@@ -1,0 +1,23 @@
+{
+    "Version": "2008-10-17",
+    "Statement": [
+        {
+            "Sid": "read only ecr",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:BatchGetImage",
+                "ecr:DescribeImageScanFindings",
+                "ecr:DescribeImages",
+                "ecr:DescribeRepositories",
+                "ecr:GetDownloadUrlForLayer",
+                "ecr:GetLifecyclePolicy",
+                "ecr:GetLifecyclePolicyPreview",
+                "ecr:GetRepositoryPolicy",
+                "ecr:ListImages",
+                "ecr:ListTagsForResource",
+            ]
+        }
+    ]
+}
