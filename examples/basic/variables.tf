@@ -13,22 +13,7 @@ variable "region" {
 }
 
 variable "images" {
-  type = list(object({
-    name                    = string
-    max_images_per_repo     = number
-    expire_image_after_days = number
-  }))
+  type = list(string)
   description = "(optional) list of images"
-  default = [
-    {
-      "name" = "proxy"
-      "max_images_per_repo"     = null
-      "expire_image_after_days" = null
-    },
-    {
-      "name" = "frontend"
-      "max_images_per_repo"     = null
-      "expire_image_after_days" = null
-    },
-  ]
+  default = ["proxy", "frontend"]
 }
