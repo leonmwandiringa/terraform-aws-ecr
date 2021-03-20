@@ -25,7 +25,7 @@ module "ecr" {
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.1 |
+| terraform | >= 0.12 |
 | aws | >= 3.0 |
 
 ## Providers
