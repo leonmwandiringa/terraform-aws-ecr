@@ -2,7 +2,7 @@
 
 resource "aws_ecr_repository" "default" {
   count                = length(var.images)
-  name                 = var.images[count.index].name
+  name                 = var.images[count.index]
   image_tag_mutability = var.image_tag_mutability
 
   dynamic "encryption_configuration" {
@@ -20,7 +20,7 @@ resource "aws_ecr_repository" "default" {
   tags = merge(
     var.tags,
     {
-      "Name" = var.images[count.index].name
+      "Name" = var.images[count.index]
     },
   )
 }
