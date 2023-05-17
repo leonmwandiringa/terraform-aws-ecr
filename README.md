@@ -19,13 +19,12 @@ module "ecr" {
 }
 ```
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12 |
-| aws | >= 3.0 |
+| terraform | >= 1.0 |
+| aws | >= 4.0 |
 
 ## Providers
 
@@ -56,11 +55,10 @@ No Modules.
 | repository\_names | Name of repositories created. |
 | repository\_urls | URL of repositories created. |
 | repository\_arns | ARN of repositories created". |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Authors
 
-Module managed by [Leon_Mwandiringa](https://github.com/techadontech).
+Module managed by [Leon_Mwandiringa](https://github.com/leonmwandiringa).
 
 ## License
 

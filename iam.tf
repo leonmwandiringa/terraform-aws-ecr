@@ -1,5 +1,4 @@
 # author LTM
-
 resource "aws_ecr_repository_policy" "default" {
   count      = length(var.images)
   repository = var.images[count.index]

@@ -1,7 +1,14 @@
 variable "tags" {
-  type        = map(any)
-  description = "(required) module global tags"
+    type = object({
+        Name = string
+        Author      = string
+        Environment = string
+        Provisioner = string
+        Region      = string
+    })
+    description = "ecr tags"
 }
+
 
 variable "scan_images_on_push" {
   type        = bool

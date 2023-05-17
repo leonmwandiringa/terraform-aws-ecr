@@ -1,5 +1,4 @@
 # author LTM 
-
 resource "aws_ecr_repository" "default" {
   count                = length(var.images)
   name                 = var.images[count.index]
