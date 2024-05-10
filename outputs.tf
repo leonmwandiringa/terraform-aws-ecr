@@ -4,16 +4,16 @@ output "registry_id" {
 }
 
 output "repository_name" {
-  value       = join(",", aws_ecr_repository.default.*.name)
-  description = "Name of first repository created"
+  value       = aws_ecr_repository.default.*.name
+  description = "Name of repositories created"
 }
 
 output "repository_url" {
-  value       = join(",", aws_ecr_repository.default.*.repository_url)
-  description = "URL of first repository created"
+  value       = aws_ecr_repository.default.*.repository_url
+  description = "URL of repositories created"
 }
 
 output "repository_arn" {
-  value       = join(",", aws_ecr_repository.default.*.arn)
-  description = "ARN of first repository created"
+  value       = aws_ecr_repository.default.*.arn
+  description = "ARN of repositories created"
 }
